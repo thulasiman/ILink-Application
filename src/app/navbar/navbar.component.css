@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Modern+Antiqua&display=swap');
+ 
+/* t.css */
+ 
+:root{
+    --orange:#ffa500;
+}
+ 
+*{
+    font-family: "Modern Antiqua", serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-transform: capitalize;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    transition: all .2s linear;
+}
+ 
+*::selection{
+    background: orange;
+    color: #fff;
+}
+ 
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-padding-top:6rem ;
+    scroll-behavior: smooth;
+}
+section{
+    padding: 2rem 9%;
+}
+.heading{
+    text-align: center;
+    padding: 3rem 0;
+}
+.heading span{
+    font-size: 3.5rem;
+    background: rgba(225,115,0,.2);
+    color: orange;
+    border-radius: .5rem;
+    padding: .2rem 1rem;
+    /* display: inline-block; */
+}
+.heading span .space{
+    background: none;
+}
+.btn{
+    display: inline-block;
+    margin-top: 1rem;
+    background: orange;
+    color: #fff;
+    padding: .8rem 3rem;
+    border: .2rem solid orange;
+    cursor: pointer;
+    font-size: 1.7rem;
+}
+.btn:hover{
+    background: rgba(225,165,0,.2);
+    color: orange;
+}
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: #333;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem 9%;
+}
+ 
+header .logo{
+    font-size: 2.5rem;
+    font-weight: bolder;
+    color: #fff;
+    text-transform: uppercase;
+}
+ 
+header .logo span{
+    color: orange;
+}
+ 
+header .navbar a{
+    color: #fff;
+    font-size: 2rem;
+    margin: .8rem;
+}
+ 
+header .navbar a:hover{
+    color: orange;
+}
+ 
+header .icons i{
+    font-size: 2.5rem;
+    color: #fff;
+    cursor: pointer;
+    margin-right: 2rem;
+}
+ 
+header .icons i:hover{
+    color: orange;
+}
+ 
+header .search-bar-container{
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    padding: 1.5rem 2rem;
+    background-color: #333;
+    border-top: .1rem solid rgba(225,225,225,.2);
+    display: flex;
+    align-items: center;
+    z-index: 1001;
+    clip-path: polygon(0 0,100% 0, 100% 0,0 0);
+    height: 0; /* Set initial height to 0 */
+    overflow: hidden; /* Hide overflow content */
+    transition: height 0.3s ease; /* Add transition for smooth animation */
+}
+ 
+header .search-bar-container.active{
+    clip-path: polygon(0 0,100% 0, 100% 100%,0 100%);
+    height: auto; /* Expand height to fit content */
+}
+ 
+header .search-bar-container #search-bar{
+    width: 100%;
+    padding: 1rem;
+    text-transform: none;
+    color: #333;
+    font-size: 1.7rem;
+    border-radius: .5rem;
+}
+ 
+header .search-bar-container label{
+    color: #fff;
+    cursor: pointer;
+    font-size: 3rem;
+    margin-left: 1.5rem;
+}
+ 
+header .search-bar-container label:hover{
+    color: orange;
+}

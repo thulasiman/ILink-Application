@@ -1,0 +1,97 @@
+/* Reset margin, padding, and box-sizing */
+* {
+    font-family: "Modern Antiqua", serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ 
+/* Body styling */
+body {
+    background-color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+ 
+/* Login form container */
+.login-form-container {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 400px;
+    height: 360px;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+ 
+/* Form styling */
+.login-form-container form {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+ 
+/* Input box styling */
+.login-form-container .box {
+    margin-bottom: 10px;
+    padding: 6px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    flex-grow: 1;
+}
+ 
+/* Button styling */
+.login-form-container .btn {
+    background-color: orange;
+    color: #fff;
+    border: none;
+    padding: 10px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+ 
+/* Button hover effect */
+.login-form-container .btn:hover {
+    background: rgba(225, 165, 0, .2);
+}
+ 
+/* Checkbox styling */
+.login-form-container input[type="checkbox"] {
+    margin-right: 5px;
+}
+ 
+/* Paragraph styling */
+.login-form-container p {
+    margin-top: 10px;
+}
+ 
+/* Link styling */
+.login-form-container a {
+    color: orange;
+    text-decoration: none;
+}
+ 
+/* Link hover effect */
+.login-form-container a:hover {
+    text-decoration: underline;
+}
+ 
+/* Close icon styling */
+.login-form-container #form-close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+}
+ 
+/* Error message styling */
+.error-message {
+    color: red;
+    font-size: 17px;
+    line-height: 2px;
+}

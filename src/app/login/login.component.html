@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <!-- Login form Container -->
+    <div class="login-form-container">
+        <i class="fas fa-times" id="form-close"></i>
+        <form #loginForm="ngForm" (ngSubmit)="onSubmit(loginForm)">
+            <input type="email" id="email" name="email" class="box" placeholder="Enter Your Email" [(ngModel)]="email" required>
+            <input type="password" id="password" name="password" class="box" placeholder="Enter Your Password" [(ngModel)]="password" required>
+            <input type="submit" value="login now" class="btn">
+            <input type="checkbox" id="remember" name="remember">
+            <label for="remember"> Remember me</label>
+            <p>Forgot Password? <a href="#">Click Here</a></p>
+            <p>Don't have an Account? <a routerLink="rss" (click)="register()" id="register">Register Now</a></p>
+            <!-- Error messages -->
+            <p class="error-message" *ngIf="showEmailRequired">Email is required</p>
+            <p class="error-message" *ngIf="showPasswordRequired">Password is required</p>
+            <p class="error-message" *ngIf="showFieldsRequired">All fields are mandatory</p>
+        </form>
+    </div>
+    
+    
+ 
+    <!-- JavaScript -->
+    <script>
+        document.getElementById('email').addEventListener('input', function() {
+            console.log('Email:', this.value);
+        });
+ 
+        document.getElementById('password').addEventListener('input', function() {
+            console.log('Password:', this.value);
+        });
+    </script>
+</body>
+</html>
+ 

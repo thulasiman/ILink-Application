@@ -1,0 +1,84 @@
+.container {
+    max-width: 400px;
+    position: relative;
+    top: 15rem;
+    margin: 50px auto 20px; /* Increase margin-top and adjust other margins */
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+ 
+input[type="text"], input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+}
+ 
+button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+ 
+.result-container {
+    margin-top: 20px;
+}
+ 
+.result-card {
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+ 
+table {
+    position: relative;
+    left: 50rem;
+    top: 20rem;
+    border: 1px solid black;
+    width: 45rem;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+ 
+th, td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+ 
+th {
+    background-color: #f2f2f2;
+}
+ 
+.result-card table {
+    width: 100%;
+}
+ 
+.result-card th,
+.result-card td {
+    padding: 8px;
+    text-align: left;
+}
+ 
+.result-card th {
+    font-weight: bold;
+}
+ 
+.result-card button {
+    background-color: #dc3545;
+    color: #fff;
+    border: none;
+    padding: 8px 16px;
+    cursor: pointer;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+ 
+.result-card button:hover {
+    background-color: #c82333;
+}

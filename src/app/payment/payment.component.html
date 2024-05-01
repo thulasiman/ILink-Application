@@ -1,0 +1,33 @@
+<div class="container">
+    <h2>Payment Detail Register</h2>
+    <input type="text" [(ngModel)]="cardOwnerName" placeholder="Card Owner Name">
+    <input type="text" [(ngModel)]="cardNumber" placeholder="Card Number">
+    <input type="number" [(ngModel)]="securityCode" placeholder="Security Code">
+    <input type="text" [(ngModel)]="validThrough" placeholder="Valid Through">
+    <button id="submit-button" (click)="submitPayment()">Submit</button>
+  </div>
+  
+  <div class="result-container" *ngIf="showResult">
+    <table>
+      <thead>
+        <tr>
+          <th>Card Owner Name</th>
+          <th>Card Number</th>
+          <th>Valid Through</th>
+          <th>Action</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let payment of paymentDetails; let i = index">
+          <td>{{ payment.cardOwnerName }}</td>
+          <td>{{ payment.cardNumber }}</td>
+          <td>{{ payment.validThrough }}</td>
+          <td>
+            <button (click)="deletePayment(payment.id)">Delete</button>
+          </td>
+        </tr>
+      </tbody>
+      
+    </table>
+  </div>
+  

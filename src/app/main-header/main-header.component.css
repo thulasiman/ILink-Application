@@ -1,0 +1,327 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ 
+/* Global styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+}
+ 
+/* Header styles */
+.header {
+    margin-top: 5rem;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSbFf05X1sUINNly2b1aiXFBqfp1dbFgls1wQ&s");
+    height: 30rem;
+}
+ 
+.header .top {
+    color: aliceblue;
+    font-size: 2rem;
+    margin-top: 4px;
+    margin-right: 57rem;
+}
+ 
+.header .box-container {
+    height: 160px;
+    width: 80rem;
+    border-radius: 1rem;
+    position: relative;
+    margin-top: 20px;
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+    background-color: white;
+    display: flex;
+    align-items: center;
+}
+ 
+.header .box-container a {
+    text-decoration: none;
+}
+ 
+.header .box-container .logo img {
+    height: 150px;
+    border: none;
+    padding: 5px;
+    width: 12rem;
+    margin-left: 3rem;
+}
+ 
+.header .box-container .logo p {
+    font-size: 1.5rem;
+    position: absolute;
+    left: 35rem;
+    top: 5rem;
+    color: red;
+}
+ 
+.header .box-container .logo .emp{
+    position: absolute;
+    top: 10rem;
+}
+.box{
+    height: 300px;
+    width: 80rem;
+    border-radius: 1rem;
+    position: absolute;
+    top: 30rem;
+    left: 20rem;
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+ 
+ 
+.header .box .n{
+    margin-top: 3rem;
+    font-weight: bolder;
+    font-size: 2rem;
+    position: absolute;
+    right: 55rem;
+}
+ 
+.header .box .psd {
+    margin-top: 6rem;
+    position: absolute;
+    right: 70rem;
+    line-height: 4rem;
+}
+.header .box .enr{
+    margin-top: 6rem;
+    margin-left: 43rem;
+    line-height: 2rem;
+    height: 170rem;
+    width: 300px;
+    
+}
+.header .box .enr h3{
+    position: absolute;
+    top: 8rem;
+    left: 50rem;
+}
+.header .box .enr p{
+    position: absolute;
+    top: 12rem;
+    left: 50rem;
+}
+.header .box .enr img{
+    display: inline-block;
+    margin-left: 20rem;
+    height: 80px;
+    width: 80px;
+    position: absolute;
+    top: 7rem;
+    right: 8rem;
+}
+ 
+.header .box .ref{
+    margin-top: 10rem;
+    display: flex;
+    justify-content: space-around;
+}
+ 
+.header .box .ref a {
+    display: inline-block;
+    height: 10px;
+    width: 140px;
+    margin-bottom: 35px;
+    margin-left: 1.5rem;
+    text-decoration: none;
+    padding: 2.5rem;
+    border: 1px dotted rgb(37, 119, 144);
+    color: rgb(83, 211, 215);
+    border-radius: .5rem;
+    background-color: rgb(200, 232, 244);
+    font-weight: bolder;
+}
+.bdn {
+    position: absolute;
+    top: 30rem;
+    left: 105rem;
+    height: 350px;
+    width: 330px;
+    border-radius: 1rem;
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+ 
+ 
+ 
+.bdn .h{
+    position: absolute;
+    top: 1.5rem;
+    left: 3rem;
+    margin-top: 2rem;
+    font-size: 2rem;
+    
+}
+ 
+.bdn .sum {
+    position: absolute;
+    top: 6rem;
+    margin-top: 2rem;
+    padding: 1rem;
+    height: 10rem;
+    width: 25rem;
+    border: 1px dotted rgb(37, 119, 144);
+}
+.bdn .sum h3{
+    position: absolute;
+    top: 4rem;
+    left: 5rem;
+}
+.bdn .sum .d{
+    position: absolute;
+    top: 7rem;
+}
+.bdn .sum img{
+    position: absolute;
+    top: 3.4rem;
+    
+    height: 30px;
+    width: 30px;
+ 
+}
+.bdn .sum .s{
+    position: absolute;
+    top:6.5rem;
+    left: 1.7rem;
+    height: 20px;
+    width: 20px;
+}
+.bdn .tfh h3{
+    position: absolute;
+    font-size: 2rem;
+    top: 20rem;
+    left: 30px;
+}
+.bdn .tfh .a{
+    font-size: 1rem;
+    margin-top: 22rem;
+    line-height: 8rem;
+    margin-right: 10rem;
+}
+.bdn .tfh img{
+    position: absolute;
+    top: 24rem;
+    left: 2rem;
+    height: 40px;
+    width: 40px;
+}
+.bdn .tfh .d{
+    position: absolute;
+    top: 29rem;
+    left: 3rem;
+    height: 30px;
+    width: 30px;
+}
+.social {
+    position: absolute;
+    top: 67rem;
+    left: 98rem;
+    height: 12rem;
+    width: 40rem;
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    background-color: white;
+    align-items: center;
+}
+ 
+.social h3 {
+    margin-top: 1.5rem;
+    margin-left: 2rem;
+    /* margin-right: 200px; */
+    font-size: 2rem;
+}
+ 
+.social img {
+    margin-top: 2rem;
+    margin-left: 3rem;
+    height: 50px;
+    width: 50px;
+    cursor: pointer;
+}
+.care {
+    position: absolute;
+    top: 65rem;
+    right: 96.5rem;
+    height: 10rem;
+    width: 27rem;
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.care h3 {
+    margin-top: 2rem;
+    margin-right:12rem ;
+    font-size: 2rem;
+}
+.care p {
+    margin-top: 1rem;
+    margin-right: 12rem;
+ 
+}
+ 
+.care img {
+    position: absolute;
+    top: 1rem;
+    left: 20rem;
+    margin-top: 1rem;
+    height: 50px;
+    width: 50px;
+}
+ 
+.pay {
+    position: absolute;
+    top: 65rem;
+    height: 10rem;
+    width: 27rem;
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    background-color: white;
+}
+.pay a {
+    position: absolute;
+    top: 5rem;
+    left: 2rem;
+    width: 100px;
+    text-align: center;
+    font-size: 1.5rem;
+    text-decoration: none;
+    border: 1px solid rgb(155, 199, 216);
+    padding: 1rem;
+    border-radius: 10px;
+    /* color: #fff; */
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+}
+.pay a:hover{
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 1);
+    background-color:rgb(155, 199, 216);
+}
+.pay h3 {
+    margin-top: 2rem;
+    margin-left: 2rem;
+    font-size: 2rem;
+}
+ 
+.pay img {
+    position: absolute;
+    left: 17rem;
+    top: 2rem;
+    height: 50px;
+    width: 50px;
+}
